@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FCFCFC;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- PRESENTACIÓN (ESCRITORIO) --- */
+.presentacion {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 90px clamp(24px, 5vw, 100px) 0;
+    background-color: #FCFCFC;
+}
+
+.texto-presentacion {
+    align-self: center;          
+    max-width: 760px;
+    padding-bottom: 40px;
+}
+
+#titulo-hola {
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 5rem);
+    line-height: 1.1;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+#titulo-diana {
+    color: #9B2226;
+}
+
+#titulo-contenido {
+    font-size: clamp(1rem, 1vw, 1rem);
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+/* --- BOTONES --- */
+.contenedor-botones {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.contenedor-botones button {
+    font-family: inherit;
+    font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+    font-weight: 500;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s, scale 0.1s;
+}
+
+#btn-explorar-proyectos {
+    border: none;
+    background-color: #9B2226;
+    color: white;
+}
+
+#btn-explorar-proyectos:hover {
+    background-color: #e0070e;
+}
+
+#btn-hablemos {
+    border: 1px solid #dcdcdc;
+    background-color: #f2eeed;
+    color: #333;
+}
+
+#btn-hablemos:hover {
+    background-color: #fcd7d9;
+}
+
+.contenedor-botones button:active {
+    scale: 0.96;
+}
+
+/* --- IMAGEN --- */
+.imagen-presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;      /* pegada a la franja roja */
+    flex-shrink: 0;
+}
+
+.imagen-presentacion img {
+    display: block;
+    height: clamp(380px, 76vh, 900px);
+    width: auto;
+    /* sin object-fit ni max-width: eso dejaba un hueco debajo de la imagen */
+}
+
+/* --- FRANJA ROJA --- */
+.franja-habilidades {
+    background-color: #9B2226;
+    color: white;
+    padding: 26px 0;
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.pista-carrusel {
+    display: flex;
+    width: max-content;
+    animation: deslizarCarrusel 25s linear infinite;
+}
+
+.pista-carrusel span {
+    display: inline-block;
+    padding: 0 60px;
+}
+
+@keyframes deslizarCarrusel {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ==========================================
+   TABLET (1024px o menos)
+   ========================================== */
+@media (max-width: 1024px) {
+    .presentacion {
+        padding: 90px 40px 0;
+        gap: 24px;
+    }
+
+    .imagen-presentacion img {
+        height: clamp(320px, 62vh, 620px);
+    }
+}
+
+/* ==========================================
+   CELULAR (768px o menos)
+   ========================================== */
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 20px 0;
+        gap: 10px;
+    }
+
+    .texto-presentacion {
+        align-self: auto;
+        padding-bottom: 10px;
+    }
+
+    #titulo-hola {
+        font-size: 2.6rem;
+    }
+
+    #titulo-contenido {
+        font-size: 1rem;
+    }
+
+    .contenedor-botones {
+        justify-content: center;
+    }
+
+    .imagen-presentacion {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .imagen-presentacion img {
+        height: auto;
+        width: min(320px, 85%);
+    }
+}
