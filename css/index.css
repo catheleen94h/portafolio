@@ -121,7 +121,7 @@ main {
 .imagen-presentacion {
     display: flex;
     justify-content: center;
-    align-items: flex-end;      /* pegada a la franja roja */
+    align-items: flex-end;      
     flex-shrink: 0;
 }
 
@@ -129,7 +129,7 @@ main {
     display: block;
     height: clamp(380px, 76vh, 900px);
     width: auto;
-    /* sin object-fit ni max-width: eso dejaba un hueco debajo de la imagen */
+    
 }
 
 /* --- FRANJA ROJA --- */

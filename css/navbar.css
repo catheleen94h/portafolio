@@ -10,18 +10,18 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: all 0.3s ease; /* Transición suave para cuando cambie al hacer scroll */
+    transition: all 0.3s ease; 
 }
 
-/* Efecto cuando haces scroll (se activa con JavaScript) */
+
 .navbar-container.scrolled {
-    background-color: rgba(252, 252, 252, 0.95); /* Ligeramente translúcido */
-    backdrop-filter: blur(5px); /* Efecto cristal esmerilado moderno */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra elegante al bajar */
-    padding: 15px 80px; /* Se reduce un poco el padding al hacer scroll */
+    background-color: rgba(252, 252, 252, 0.95); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+    padding: 15px 80px; 
 }
 
-/* Estilo del logotipo / marca */
+
 .navbar-logo {
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@
 @media screen and (max-width: 900px) {
     .navbar-container,
     .navbar-container.scrolled {
-        padding: 15px 20px; /* Mantiene un padding consistente en móviles */
+        padding: 15px 20px; 
     }
 
     .navbar-toggle {
