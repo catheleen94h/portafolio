@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64" fill="none">
+  <!-- Conectores entre servidores -->
+  <rect x="30" y="19" width="4" height="7" rx="1" fill="#F8C9CC"/>
+  <rect x="30" y="38" width="4" height="7" rx="1" fill="#F8C9CC"/>
+  <!-- Servidor 1 -->
+  <rect x="6" y="5" width="52" height="15" rx="5" fill="#9B2226"/>
+  <circle cx="15" cy="12.5" r="2.4" fill="#F8C9CC"/>
+  <circle cx="23" cy="12.5" r="2.4" fill="#FFFFFF"/>
+  <rect x="35" y="10.5" width="16" height="4" rx="2" fill="#F8C9CC"/>
+  <!-- Servidor 2 -->
+  <rect x="6" y="25" width="52" height="15" rx="5" fill="#9B2226"/>
+  <circle cx="15" cy="32.5" r="2.4" fill="#F8C9CC"/>
+  <circle cx="23" cy="32.5" r="2.4" fill="#FFFFFF"/>
+  <rect x="35" y="30.5" width="16" height="4" rx="2" fill="#F8C9CC"/>
+  <!-- Servidor 3 -->
+  <rect x="6" y="45" width="52" height="15" rx="5" fill="#9B2226"/>
+  <circle cx="15" cy="52.5" r="2.4" fill="#F8C9CC"/>
+  <circle cx="23" cy="52.5" r="2.4" fill="#FFFFFF"/>
+  <rect x="35" y="50.5" width="16" height="4" rx="2" fill="#F8C9CC"/>
+</svg>

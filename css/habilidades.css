@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --rojo: #9B2226;
+    --rojo-hover: #e0070e;
+    --rosa: #f8c9cc;
+    --borde: #dcdcdc;
+    --texto: black;
+    --texto-suave: #444;
+    --fondo: #FCFCFC;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+ul {
+    list-style: none;
+}
+
+#contenedor-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.contenedor-habilidades {
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: clamp(24px, 4vw, 64px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(40px, 6vw, 64px);
+}
+
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+}
+
+.encabezado > * {
+    animation: aparecer 0.7s ease both;
+}
+
+.etiqueta {
+    color: var(--rojo);
+    font-weight: 400;
+    
+}
+
+.titulo-pagina {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    animation-delay: 0.1s;
+}
+
+.resaltado {
+    color: var(--rojo);
+}
+
+.descripcion {
+    font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+    line-height: 1.7;
+}
+
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: aparecer 0.7s ease both;
+}
+
+
+
+
+
+/****************Tarjetas -tecnologias***************************************/
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-skill {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    animation: aparecer 0.7s ease both;
+}
+
+
+
+.tarjeta-skill:hover {
+    transform: translateY(-6px);
+    border-color: var(--rojo);
+    box-shadow: 0 12px 28px rgba(155, 34, 38, 0.15);
+}
+
+.tarjeta-cabecera {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.tarjeta-cabecera h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.icono {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta-skill:hover .icono {
+    background-color: var(--rosa);
+    animation: pulso 0.8s ease infinite;
+}
+
+.tarjeta-skill p {
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+    line-height: 1.5;
+}
+
+/* ==========================================
+   CHIPS (tecnologías)
+   ========================================== */
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chips li {
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    background-color: #f5f2f1;
+    border: 1px solid var(--borde);
+    border-radius: 999px;
+    cursor: default;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.chips li:hover {
+    background-color: var(--rojo);
+    border-color: var(--rojo);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pills li {
+    padding: 8px 18px;
+    font-size: 0.82rem;
+    background-color: var(--rosa);
+    border: 1px solid #f0a9ae;
+    border-radius: 999px;
+    cursor: default;
+    animation: pop 0.5s ease both;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+
+
+.pills li:hover {
+    background-color: var(--rojo);
+    color: #ffffff;
+    transform: scale(1.06);
+}
+
+
+.grid-idiomas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-idioma {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background-color: #ffffff;
+    border: 1px solid var(--borde);
+    border-left: 4px solid var(--borde);
+    border-radius: 10px;
+    transition: border-left-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-idioma:hover {
+    border-left-color: var(--rojo);
+    transform: translateX(6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.idioma {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.nivel {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 24px clamp(24px, 4vw, 64px);
+    font-size: 0.75rem;
+    color: var(--texto-suave);
+    border-top: 1px solid var(--borde);
+}
+
+/* ==========================================
+   TABLET (1024px o menos)
+   ========================================== */
+@media (max-width: 1024px) {
+    .contenedor-habilidades {
+        max-width: 900px;
+    }
+}
+
+/* ==========================================
+   CELULAR (768px o menos)
+   ========================================== */
+@media (max-width: 768px) {
+    .grid-tarjetas,
+    .grid-idiomas {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-skill {
+        padding: 20px;
+    }
+}
+
+/* ==========================================
+   CELULAR PEQUEÑO (480px o menos)
+   ========================================== */
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   ACCESIBILIDAD: quitar animaciones si el
+   usuario lo prefiere así en su sistema
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .resaltado {
+        background-size: 100% 6px;
+    }
+}

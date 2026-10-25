@@ -60,6 +60,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .imagen-dianah img:hover{
     scale:1.01;
+    border: 1px solid #9B2226;
     box-shadow: 0 10px 20px #9b222686;
 }
 
@@ -179,7 +180,9 @@ column-gap: clamp(32px, 8vw, 128px);
 }
 
 .tarjeta:hover{
-    scale:1.02;
+    transform: translateY(-6px);
+    border-color:#9B2226;
+    box-shadow: 0 12px 28px rgba(155, 34, 38, 0.15);
 }
 
 /************************* EDUCACION y EXPERIENCIA****************************/
@@ -207,6 +210,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta-educacion:hover{
     scale:1.02;
+    border-top: 1px solid #9B2226;
 }
 
 .tarjeta-educacion{
@@ -245,7 +249,9 @@ column-gap: clamp(32px, 8vw, 128px);
 }   
 
 .tarjeta-cursos:hover{
-    scale:1.02
+    transform: translateY(-6px);
+    border-color:#9B2226;
+    box-shadow: 0 12px 28px rgba(155, 34, 38, 0.15);
 }
 
 .tarjeta-cursos{

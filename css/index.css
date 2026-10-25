@@ -33,7 +33,7 @@ main {
     flex-direction: column;
 }
 
-/* --- PRESENTACIÓN (ESCRITORIO) --- */
+
 .presentacion {
     flex: 1;
     display: flex;
@@ -129,6 +129,11 @@ main {
     display: block;
     height: clamp(380px, 76vh, 900px);
     width: auto;
+    
+}
+
+.imagen-presentacion img:hover {
+    scale: 1.02;
     
 }
 

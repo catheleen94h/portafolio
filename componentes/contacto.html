@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <base href="../">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Diana Hinestroza</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+    <!-- Aquí se carga tu navbar (el mismo contenedor que ya usas) -->
+    <div id="contenedor-navbar"></div>
+
+    <main class="contenedor-contacto">
+
+        <!-- ENCABEZADO -->
+        <header class="encabezado">
+            <p class="etiqueta">Contacto</p>
+            <h1 class="titulo-pagina">Hablemos<span class="punto">.</span></h1>
+            <p class="descripcion">
+                ¿Tienes una oportunidad o un proyecto en mente? Estoy abierta a conversar sobre
+                roles como desarrolladora Full Stack junior. Escríbeme y te respondo pronto.
+            </p>
+        </header>
+
+        <div class="grid-contacto">
+
+            <!-- DATOS DE CONTACTO -->
+            <ul class="lista-contacto">
+                <li>
+                    <a class="item-contacto" href="mailto:cathe.hinestroza@gmail.com">
+                        <img src="assets/img/icono-correo.svg" class="icono">
+                        <span class="datos">
+                            <span class="dato-etiqueta">Correo</span>
+                            <span class="dato-valor">cathe.hinestroza@gmail.com</span>
+                        </span>
+                    </a>
+                </li>
+       
+                <li>
+                    <a class="item-contacto" href="https://www.linkedin.com/in/diana-hinestroza" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/icono-linkedin.svg" class="icono">
+                        <span class="datos">
+                            <span class="dato-etiqueta">LinkedIn</span>
+                            <span class="dato-valor">/in/diana-hinestroza</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="item-contacto" href="https://github.com/catheleen94h" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/icono-github.svg" class="icono">
+                        <span class="datos">
+                            <span class="dato-etiqueta">GitHub</span>
+                            <span class="dato-valor">catheleen94h</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <div class="item-contacto">
+                        <img src="assets/img/icono-ubicacion.svg"class="icono">
+                        <span class="datos">
+                            <span class="dato-etiqueta">Ubicación</span>
+                            <span class="dato-valor">Cali, Colombia</span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- FORMULARIO -->
+            <form class="formulario" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+                <h2 class="titulo-form">Envíame un mensaje</h2>
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre la oportunidad o el proyecto" required></textarea>
+                </div>
+
+                <button type="button" class="btn-enviar">
+                    Enviar mensaje <span class="flecha">↗</span>
+                </button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Diana Hinestroza</p>
+        <p>Cali, Colombia</p>
+    </footer>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64" fill="none">
+  <!-- Sombra en el suelo -->
+  <ellipse cx="32" cy="58" rx="14" ry="3.5" fill="#F8C9CC" opacity="0.85"/>
+  <ellipse cx="32" cy="58" rx="7" ry="1.8" fill="#9B2226" opacity="0.35"/>
+  <!-- Pin -->
+  <path d="M32 56C32 56 11 38 11 25a21 21 0 0 1 42 0C53 38 32 56 32 56z" fill="#9B2226"/>
+  <!-- Brillo -->
+  <path d="M18 22a14 14 0 0 1 9-10" stroke="#F8C9CC" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <!-- Centro -->
+  <circle cx="32" cy="25" r="10" fill="#F8C9CC"/>
+  <circle cx="32" cy="25" r="5.5" fill="#9B2226"/>
+</svg>

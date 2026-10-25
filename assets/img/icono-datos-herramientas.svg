@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64" fill="none">
+  <!-- Base de datos -->
+  <path d="M9 13v29c0 3.6 8.2 6.5 18.5 6.5S46 45.6 46 42V13z" fill="#9B2226"/>
+  <path d="M9 24c0 3.6 8.2 6.5 18.5 6.5S46 27.6 46 24M9 34c0 3.6 8.2 6.5 18.5 6.5S46 37.6 46 34" stroke="#F8C9CC" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <ellipse cx="27.5" cy="13" rx="18.5" ry="6.5" fill="#F8C9CC" stroke="#9B2226" stroke-width="2"/>
+  <!-- Insignia de control de versiones -->
+  <circle cx="47" cy="47" r="13.5" fill="#F8C9CC" stroke="#FCFCFC" stroke-width="2.5"/>
+  <path d="M43 41.5v11M43 48c0-3 8-1.5 8-6" stroke="#9B2226" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="43" cy="41.5" r="2.6" fill="#9B2226"/>
+  <circle cx="43" cy="52.5" r="2.6" fill="#9B2226"/>
+  <circle cx="51" cy="41.5" r="2.6" fill="#9B2226"/>
+</svg>
