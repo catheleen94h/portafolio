@@ -81,7 +81,7 @@ main {
 }
 
 .contenedor-botones button {
-    font-family: inherit;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(0.95rem, 1.1vw, 1.1rem);
     font-weight: 500;
     padding: 14px 28px;

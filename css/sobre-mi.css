@@ -101,7 +101,7 @@ column-gap: clamp(32px, 8vw, 128px);
 }
 
 .contenedor-botones-sobre-mi button {
-    font-family: inherit;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(0.8rem, 1.1vw, 1.1rem);
     font-weight: 400;
     padding: 14px 28px;
@@ -133,6 +133,56 @@ column-gap: clamp(32px, 8vw, 128px);
 #btn-proyectos:hover {
     background-color: #ffffff;
 }
+
+
+/***********Tarjetas********************/
+.contenedor-tarjetas-logros{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 3%;    
+}
+
+
+
+.tarjetas-logros{
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 20px;
+    column-gap: clamp(25px, 8vw, 50px);
+}
+
+
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    padding: 2%;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    gap:20px;
+}
+
+.tarjeta img{
+    display: block;
+    width: 100%; 
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.tarjeta:hover{
+    scale:1.02;
+}
+
+
+
+
 
 
 /* ==========================================
