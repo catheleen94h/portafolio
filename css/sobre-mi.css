@@ -60,8 +60,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .imagen-dianah img:hover{
     scale:1.01;
-    border: 1px solid #9B2226;
-    box-shadow: 0 10px 20px #9b222686;
+    box-shadow: 0 10px 20px #9b22264b;
 }
 
 .texto-resumen{
@@ -190,7 +189,7 @@ column-gap: clamp(32px, 8vw, 128px);
 .contenedor-tarjetas-educacion{
     display: flex;
     flex-direction: column;
-    gap:60px;
+    justify-content: center;
     padding: 2%;    
     max-width: 100%;
 }
@@ -198,6 +197,7 @@ column-gap: clamp(32px, 8vw, 128px);
 .fecha-tarjeta-educacion{
     color:#9B2226;
     font-weight: 700;
+    height: 100%;
 }
 
 .negrita{
@@ -210,14 +210,17 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta-educacion:hover{
     scale:1.02;
+    background-color: #9b222621;
     border-top: 1px solid #9B2226;
+    border-bottom: 1px solid #9B2226;
+
 }
 
 .tarjeta-educacion{
     display:flex;
     flex-direction: row; 
     padding-top: 2%; 
-    padding-bottom: 0;
+    padding-bottom: 1%;
     max-width: 100%;
     column-gap: clamp(32px, 8vw, 128px);
     
