@@ -233,6 +233,7 @@ column-gap: clamp(32px, 8vw, 128px);
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding-left: 3%;
     padding-bottom: 5rem;
 }
 
