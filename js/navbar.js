@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('/componentes/navbar.html')
-        .then(response => response.text())
+    fetch('componentes/navbar.html')
+        .then(response => {
+            if (!response.ok) throw new Error('No se encontró la navbar');
+            return response.text(); }
+        )
         .then(data => {
             document.getElementById('contenedor-navbar').innerHTML = data;
         })
