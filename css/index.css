@@ -132,11 +132,6 @@ main {
     
 }
 
-.imagen-presentacion img:hover {
-    scale: 1.02;
-    
-}
-
 /* --- FRANJA ROJA --- */
 .franja-habilidades {
     background-color: #9B2226;
