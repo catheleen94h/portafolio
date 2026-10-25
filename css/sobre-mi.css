@@ -26,9 +26,12 @@ body {
 
 
 .contenedor-principal-sobre-mi {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    gap: 50px;
 }
 
 /****************************FOTO Y CONTENIDO **********************************/
@@ -135,11 +138,11 @@ column-gap: clamp(32px, 8vw, 128px);
 }
 
 
-/***********Tarjetas********************/
+/***********Tarjetas lo que me define ********************/
 .contenedor-tarjetas-logros{
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:50px;
     padding: 3%;    
 }
 
@@ -175,15 +178,90 @@ column-gap: clamp(32px, 8vw, 128px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-
 .tarjeta:hover{
     scale:1.02;
 }
 
+/************************* EDUCACION y EXPERIENCIA****************************/
+
+.contenedor-tarjetas-educacion{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    padding: 2%;    
+    max-width: 100%;
+}
+
+.fecha-tarjeta-educacion{
+    color:#9B2226;
+    font-weight: 700;
+}
+
+.negrita{
+    font-weight: 700;
+}
+
+.nombre-institucion{
+    font-style: italic;
+}
+
+.tarjeta-educacion:hover{
+    scale:1.02;
+}
+
+.tarjeta-educacion{
+    display:flex;
+    flex-direction: row; 
+    padding-top: 2%; 
+    padding-bottom: 0;
+    max-width: 100%;
+    column-gap: clamp(32px, 8vw, 128px);
+    
+    justify-content: left;
+    border-top: 1px solid #dcdcdc;
 
 
+}
 
+.fecha-tarjeta-educacion {
+  white-space: nowrap;
+}
 
+/************************Tarjetas cursos******************************/
+
+.contenedor-cursos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 5rem;
+}
+
+.tarjetas-cursos{
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 20px;
+    column-gap: clamp(25px, 8vw, 50px);
+}   
+
+.tarjeta-cursos:hover{
+    scale:1.02
+}
+
+.tarjeta-cursos{
+    display: flex;
+    flex-direction: column;  
+    max-width: 30%;
+    padding: 2%;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    gap:20px;
+}
+
+.tipo-curso{
+    color:#9B2226;
+    font-size: smaller;
+}
 
 /* ==========================================
    TABLET (1024px o menos)
@@ -212,7 +290,7 @@ column-gap: clamp(32px, 8vw, 128px);
     .imagen-dianah {
         flex: none;
         align-self: center;
-        width: min(320px, 85%);
+        width: 100%;
     }
  
     #contenido-sobre-mi {
@@ -227,7 +305,29 @@ column-gap: clamp(32px, 8vw, 128px);
     .contenedor-botones-sobre-mi button {
         font-size: 1rem;
     }
+
+    .tarjeta,
+    .tarjeta-cursos {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .tarjeta-educacion {
+        flex-direction: column;
+        row-gap: 8px;
+        padding-top: 16px;
+    }
+
+    .contenedor-tarjetas-logros,
+    .contenedor-tarjetas-educacion {
+        padding: 20px;
+    }
 }
+
+
+
+
  
 /* ==========================================
    CELULAR PEQUEÑO (480px o menos)
