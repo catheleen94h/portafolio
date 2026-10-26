@@ -1,24 +1,36 @@
+/* --- COLORES --- */
+:root {
+    --rojo: #9B2226;
+    --fondo: #FCFCFC;
+    --fondo-scrolled: rgba(252, 252, 252, 0.95);
+    --borde: #eaeaea;
+    --texto-oscuro: #111;
+    --texto-suave: #444;
+    --sombra-scrolled: rgba(0, 0, 0, 0.08);
+    --sombra-menu: rgba(0, 0, 0, 0.05);
+}
+
 /* --- BARRA DE NAVEGACIÓN --- */
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
-    background-color: #FCFCFC;
-    border-bottom: 1px solid #eaeaea;
+    background-color: var(--fondo);
+    border-bottom: 1px solid var(--borde);
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 
 .navbar-container.scrolled {
-    background-color: rgba(252, 252, 252, 0.95); 
-    backdrop-filter: blur(5px); 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
-    padding: 15px 80px; 
+    background-color: var(--fondo-scrolled);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 20px var(--sombra-scrolled);
+    padding: 15px 80px;
 }
 
 
@@ -28,22 +40,22 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    color: #111;
+    color: var(--texto-oscuro);
     gap: 8px;
 }
 
 .logo-llaves {
-    color: #9B2226;
+    color: var(--rojo);
     font-weight: 700;
 }
 
 .logo-iniciales {
-    color: #9B2226;
+    color: var(--rojo);
     font-weight: 700;
 }
 
 .logo-nombre {
-    color: #111;
+    color: var(--texto-oscuro);
     font-weight: 600;
 }
 
@@ -55,14 +67,14 @@
 
 .navbar-links a {
     text-decoration: none;
-    color: #444;
+    color: var(--texto-suave);
     font-size: 14px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: #9B2226; 
+    color: var(--rojo);
 }
 
 /******* BOTÓN HAMBURGUESA **********/
@@ -78,7 +90,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #111;
+    background-color: var(--texto-oscuro);
     margin: 5px 0;
     transition: 0.3s;
 }
@@ -87,7 +99,7 @@
 @media screen and (max-width: 900px) {
     .navbar-container,
     .navbar-container.scrolled {
-        padding: 15px 20px; 
+        padding: 15px 20px;
     }
 
     .navbar-toggle {
@@ -101,10 +113,10 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #FCFCFC;
+        background-color: var(--fondo);
         padding: 20px;
-        border-bottom: 1px solid #eaeaea;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid var(--borde);
+        box-shadow: 0 4px 6px var(--sombra-menu);
         gap: 15px;
         text-align: center;
     }

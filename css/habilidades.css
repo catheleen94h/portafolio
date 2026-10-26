@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
+    /* Rojo y rosa */
     --rojo: #9B2226;
     --rojo-hover: #e0070e;
+    --rojo-sombra-suave: rgba(155, 34, 38, 0.15);
     --rosa: #f8c9cc;
+    --borde-rosa: #f0a9ae;
+
+    /* Neutros */
+    --blanco: #ffffff;
+    --fondo: #FCFCFC;
+    --fondo-chip: #f5f2f1;
     --borde: #dcdcdc;
+
+    /* Textos */
     --texto: black;
     --texto-suave: #444;
-    --fondo: #FCFCFC;
+    --texto-nivel: #777;
+
+    /* Efectos */
+    --sombra: rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -66,7 +79,7 @@ ul {
 .etiqueta {
     color: var(--rojo);
     font-weight: 400;
-    
+
 }
 
 .titulo-pagina {
@@ -109,7 +122,7 @@ ul {
     flex-direction: column;
     gap: 14px;
     padding: 24px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border: 1px solid var(--borde);
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -121,7 +134,7 @@ ul {
 .tarjeta-skill:hover {
     transform: translateY(-6px);
     border-color: var(--rojo);
-    box-shadow: 0 12px 28px rgba(155, 34, 38, 0.15);
+    box-shadow: 0 12px 28px var(--rojo-sombra-suave);
 }
 
 .tarjeta-cabecera {
@@ -140,7 +153,7 @@ ul {
     width: 32px;
     height: 32px;
     border-radius: 6px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     transition: background-color 0.3s ease;
 }
 
@@ -167,7 +180,7 @@ ul {
 .chips li {
     padding: 6px 14px;
     font-size: 0.78rem;
-    background-color: #f5f2f1;
+    background-color: var(--fondo-chip);
     border: 1px solid var(--borde);
     border-radius: 999px;
     cursor: default;
@@ -177,7 +190,7 @@ ul {
 .chips li:hover {
     background-color: var(--rojo);
     border-color: var(--rojo);
-    color: #ffffff;
+    color: var(--blanco);
     transform: translateY(-3px);
 }
 
@@ -192,7 +205,7 @@ ul {
     padding: 8px 18px;
     font-size: 0.82rem;
     background-color: var(--rosa);
-    border: 1px solid #f0a9ae;
+    border: 1px solid var(--borde-rosa);
     border-radius: 999px;
     cursor: default;
     animation: pop 0.5s ease both;
@@ -203,7 +216,7 @@ ul {
 
 .pills li:hover {
     background-color: var(--rojo);
-    color: #ffffff;
+    color: var(--blanco);
     transform: scale(1.06);
 }
 
@@ -219,7 +232,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 18px 24px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border: 1px solid var(--borde);
     border-left: 4px solid var(--borde);
     border-radius: 10px;
@@ -229,7 +242,7 @@ ul {
 .tarjeta-idioma:hover {
     border-left-color: var(--rojo);
     transform: translateX(6px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 20px var(--sombra);
 }
 
 .idioma {
@@ -239,7 +252,7 @@ ul {
 
 .nivel {
     font-size: 0.8rem;
-    color: #777;
+    color: var(--texto-nivel);
 }
 
 

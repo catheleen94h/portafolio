@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/****************************COLORES **********************************/
+:root {
+    --color-fondo: #FCFCFC;
+    --color-blanco: #ffffff;
+    --color-primario: #9B2226;
+    --color-primario-hover: #e0070e;
+    --color-primario-sombra: #9b22264b;
+    --color-primario-sombra-suave: rgba(155, 34, 38, 0.15);
+    --color-primario-fondo-suave: #9b222607;
+    --color-borde: #dcdcdc;
+    --color-boton-secundario: #f2eeed;
+    --color-texto: #333;
+    --color-sombra: rgba(0, 0, 0, 0.15);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +30,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #FCFCFC;
+    background-color: var(--color-fondo);
 }
 
 #contenedor-navbar {
@@ -55,12 +70,12 @@ column-gap: clamp(32px, 8vw, 128px);
     width: 100%; 
     height: auto;
     border-radius: 5%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px var(--color-sombra);
 }
 
 .imagen-dianah img:hover{
     scale:1.01;
-    box-shadow: 0 10px 20px #9b22264b;
+    box-shadow: 0 10px 20px var(--color-primario-sombra);
 }
 
 .texto-resumen{
@@ -72,7 +87,7 @@ column-gap: clamp(32px, 8vw, 128px);
 }
 
 #titulo-sobre-mi{
-    color:#9B2226;
+    color: var(--color-primario);
     font-weight: 400;
 }
 
@@ -83,7 +98,7 @@ column-gap: clamp(32px, 8vw, 128px);
 }
 
 #color{
-    color:#9B2226;
+    color: var(--color-primario);
     
 }
 
@@ -119,22 +134,22 @@ column-gap: clamp(32px, 8vw, 128px);
 
 #btn-descargar-cv {
     border: none;
-    background-color: #9B2226;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
 }
 
 #btn-descargar-cv:hover {
-    background-color: #e0070e;
+    background-color: var(--color-primario-hover);
 }
 
 #btn-proyectos {
-    border: 1px solid #dcdcdc;
-    background-color: #f2eeed;
-    color: #333;
+    border: 1px solid var(--color-borde);
+    background-color: var(--color-boton-secundario);
+    color: var(--color-texto);
 }
 
 #btn-proyectos:hover {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
 }
 
 
@@ -164,8 +179,8 @@ column-gap: clamp(32px, 8vw, 128px);
     align-items: center;
     max-width: 30%;
     padding: 2%;
-    background-color: #ffffff;
-    border: 1px solid #dcdcdc;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
     border-radius: 20px;
     gap:20px;
 }
@@ -175,13 +190,13 @@ column-gap: clamp(32px, 8vw, 128px);
     width: 100%; 
     height: auto;
     border-radius: 5%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px var(--color-sombra);
 }
 
 .tarjeta:hover{
     transform: translateY(-6px);
-    border-color:#9B2226;
-    box-shadow: 0 12px 28px rgba(155, 34, 38, 0.15);
+    border-color: var(--color-primario);
+    box-shadow: 0 12px 28px var(--color-primario-sombra-suave);
 }
 
 /************************* EDUCACION y EXPERIENCIA****************************/
@@ -195,7 +210,7 @@ column-gap: clamp(32px, 8vw, 128px);
 }
 
 .fecha-tarjeta-educacion{
-    color:#9B2226;
+    color: var(--color-primario);
     font-weight: 700;
     height: 100%;
 }
@@ -210,9 +225,9 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta-educacion:hover{
     scale:1.02;
-    background-color: #9b222607;
-    border-top: 1px solid #9B2226;
-    border-bottom: 1px solid #9B2226;
+    background-color: var(--color-primario-fondo-suave);
+    border-top: 1px solid var(--color-primario);
+    border-bottom: 1px solid var(--color-primario);
 
 }
 
@@ -225,7 +240,7 @@ column-gap: clamp(32px, 8vw, 128px);
     column-gap: clamp(32px, 8vw, 128px);
     
     justify-content: left;
-    border-top: 1px solid #dcdcdc;
+    border-top: 1px solid var(--color-borde);
 
 
 }
@@ -253,8 +268,8 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta-cursos:hover{
     transform: translateY(-6px);
-    border-color:#9B2226;
-    box-shadow: 0 12px 28px rgba(155, 34, 38, 0.15);
+    border-color: var(--color-primario);
+    box-shadow: 0 12px 28px var(--color-primario-sombra-suave);
 }
 
 .tarjeta-cursos{
@@ -262,14 +277,14 @@ column-gap: clamp(32px, 8vw, 128px);
     flex-direction: column;  
     max-width: 30%;
     padding: 2%;
-    background-color: #ffffff;
-    border: 1px solid #dcdcdc;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
     border-radius: 20px;
     gap:20px;
 }
 
 .tipo-curso{
-    color:#9B2226;
+    color: var(--color-primario);
     font-size: smaller;
 }
 

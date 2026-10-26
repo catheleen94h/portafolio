@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* --- COLORES --- */
+:root {
+    --rojo: #9B2226;
+    --rojo-hover: #e0070e;
+    --blanco: #ffffff;
+    --fondo: #FCFCFC;
+    --fondo-boton: #f2eeed;
+    --borde: #dcdcdc;
+    --texto-oscuro: #111;
+    --texto-suave: #444;
+    --texto-boton: #333;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +29,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    background-color: #FCFCFC;
+    background-color: var(--fondo);
 }
 
 .navbar-container {
@@ -45,11 +58,11 @@ main {
     max-width: 1600px;
     margin: 0 auto;
     padding: 90px clamp(24px, 5vw, 100px) 0;
-    background-color: #FCFCFC;
+    background-color: var(--fondo);
 }
 
 .texto-presentacion {
-    align-self: center;          
+    align-self: center;
     max-width: 760px;
     padding-bottom: 40px;
 }
@@ -58,17 +71,17 @@ main {
     font-weight: 700;
     font-size: clamp(2rem, 5vw, 5rem);
     line-height: 1.1;
-    color: #111;
+    color: var(--texto-oscuro);
     margin-bottom: 20px;
 }
 
 #titulo-diana {
-    color: #9B2226;
+    color: var(--rojo);
 }
 
 #titulo-contenido {
     font-size: clamp(1rem, 1vw, 1rem);
-    color: #444;
+    color: var(--texto-suave);
     line-height: 1.7;
     margin-bottom: 36px;
 }
@@ -95,22 +108,22 @@ main {
 
 #btn-explorar-proyectos {
     border: none;
-    background-color: #9B2226;
-    color: white;
+    background-color: var(--rojo);
+    color: var(--blanco);
 }
 
 #btn-explorar-proyectos:hover {
-    background-color: #e0070e;
+    background-color: var(--rojo-hover);
 }
 
 #btn-hablemos {
-    border: 1px solid #dcdcdc;
-    background-color: #f2eeed;
-    color: #333;
+    border: 1px solid var(--borde);
+    background-color: var(--fondo-boton);
+    color: var(--texto-boton);
 }
 
 #btn-hablemos:hover {
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 
 .contenedor-botones button:active {
@@ -121,7 +134,7 @@ main {
 .imagen-presentacion {
     display: flex;
     justify-content: center;
-    align-items: flex-end;      
+    align-items: flex-end;
     flex-shrink: 0;
 }
 
@@ -129,13 +142,13 @@ main {
     display: block;
     height: clamp(380px, 76vh, 900px);
     width: auto;
-    
+
 }
 
 /* --- FRANJA ROJA --- */
 .franja-habilidades {
-    background-color: #9B2226;
-    color: white;
+    background-color: var(--rojo);
+    color: var(--blanco);
     padding: 26px 0;
     font-size: clamp(0.95rem, 1.2vw, 1.15rem);
     font-weight: 500;

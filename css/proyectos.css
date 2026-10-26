@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
+    /* Rojo principal */
     --rojo: #9B2226;
     --rojo-hover: #e0070e;
     --rosa: #f8c9cc;
+    --rojo-sombra: rgba(155, 34, 38, 0.3);
+    --rojo-sombra-suave: rgba(155, 34, 38, 0.15);
+
+    /* Neutros */
+    --blanco: #ffffff;
+    --fondo: #FCFCFC;
+    --fondo-boton: #f2eeed;
+    --fondo-chip: #f5f2f1;
+    --fondo-imagen: #ececec;
     --borde: #dcdcdc;
+
+    /* Textos */
     --texto: #1a1a1a;
     --texto-suave: #444;
-    --fondo: #FCFCFC;
+    --texto-imagen: #555;
+
+    /* Efectos */
+    --brillo: rgba(255, 255, 255, 0.55);
 }
 
 * {
@@ -78,18 +93,18 @@ a {
     font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 700;
     line-height: 1.15;
-    
+
 }
 
 .resaltado {
     color: var(--rojo);
-   
+
 }
 
 .descripcion {
     font-size: clamp(0.9rem, 1.1vw, 1.1rem);
     line-height: 1.7;
-    
+
 }
 
 
@@ -106,7 +121,7 @@ a {
     font-weight: 500;
     padding: 9px 22px;
     color: var(--texto);
-    background-color: #f2eeed;
+    background-color: var(--fondo-boton);
     border: 1px solid var(--borde);
     border-radius: 999px;
     cursor: pointer;
@@ -114,7 +129,7 @@ a {
 }
 
 .filtro:hover {
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border-color: var(--rojo);
     transform: translateY(-2px);
 }
@@ -129,10 +144,10 @@ a {
 }
 
 .filtro.activo {
-    color: #ffffff;
+    color: var(--blanco);
     background-color: var(--rojo);
     border-color: var(--rojo);
-    box-shadow: 0 6px 14px rgba(155, 34, 38, 0.3);
+    box-shadow: 0 6px 14px var(--rojo-sombra);
 }
 
 .filtro.activo:hover {
@@ -152,7 +167,7 @@ a {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border: 1px solid var(--borde);
     border-radius: 14px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -164,7 +179,7 @@ a {
 .tarjeta-proyecto:hover {
     transform: translateY(-6px);
     border-color: var(--rojo);
-    box-shadow: 0 14px 30px rgba(155, 34, 38, 0.15);
+    box-shadow: 0 14px 30px var(--rojo-sombra-suave);
 }
 
 
@@ -185,8 +200,8 @@ a {
     height: 190px;
     overflow: hidden;
     font-size: 0.8rem;
-    color: #555;
-    background-color: #ececec;
+    color: var(--texto-imagen);
+    background-color: var(--fondo-imagen);
 }
 
 .tarjeta-imagen img {
@@ -205,7 +220,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.55) 50%, transparent 70%);
+    background: linear-gradient(100deg, transparent 30%, var(--brillo) 50%, transparent 70%);
     transform: translateX(-100%);
     pointer-events: none;
 }
@@ -250,7 +265,7 @@ a {
 .chips li {
     padding: 6px 14px;
     font-size: 0.75rem;
-    background-color: #f5f2f1;
+    background-color: var(--fondo-chip);
     border: 1px solid var(--borde);
     border-radius: 999px;
     cursor: default;
@@ -260,7 +275,7 @@ a {
 .chips li:hover {
     background-color: var(--rojo);
     border-color: var(--rojo);
-    color: #ffffff;
+    color: var(--blanco);
     transform: translateY(-3px);
 }
 
@@ -293,24 +308,24 @@ a {
 }
 
 .btn-primario {
-    color: #ffffff;
+    color: var(--blanco);
     background-color: var(--rojo);
 }
 
 .btn-primario:hover {
     background-color: var(--rojo-hover);
-    box-shadow: 0 8px 18px rgba(155, 34, 38, 0.3);
+    box-shadow: 0 8px 18px var(--rojo-sombra);
     transform: translateY(-2px);
 }
 
 .btn-secundario {
     color: var(--texto);
-    background-color: #f2eeed;
+    background-color: var(--fondo-boton);
     border: 1px solid var(--borde);
 }
 
 .btn-secundario:hover {
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border-color: var(--rojo);
     transform: translateY(-2px);
 }
