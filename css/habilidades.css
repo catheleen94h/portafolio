@@ -1,26 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Rojo y rosa */
-    --rojo: #9B2226;
-    --rojo-hover: #e0070e;
-    --rojo-sombra-suave: rgba(155, 34, 38, 0.15);
-    --rosa: #f8c9cc;
-    --borde-rosa: #f0a9ae;
+    /* Paleta */
+    --deep-twilight: #03045eff;
+    --french-blue: #023e8aff;
+    --bright-teal-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --turquoise-surf: #00b4d8ff;
+    --sky-aqua: #48cae4ff;
+    --frosted-blue: #90e0efff;
+    --frosted-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+
+    /* Color principal y acento */
+    --primario: var(--bright-teal-blue);
+    --primario-hover: var(--french-blue);
+    --acento: var(--frosted-blue-2);
+    --borde-acento: var(--sky-aqua);
+    /* Transparencia (mismo tono que --bright-teal-blue: 0, 119, 182) */
+    --primario-sombra-suave: rgba(0, 119, 182, 0.15);
 
     /* Neutros */
     --blanco: #ffffff;
     --fondo: #FCFCFC;
-    --fondo-chip: #f5f2f1;
-    --borde: #dcdcdc;
+    --fondo-chip: var(--light-cyan);
+    --borde: var(--frosted-blue);
 
     /* Textos */
-    --texto: black;
-    --texto-suave: #444;
-    --texto-nivel: #777;
+    --texto: var(--deep-twilight);
+    --texto-suave: var(--french-blue);
+    --texto-nivel: var(--bright-teal-blue);
 
-    /* Efectos */
-    --sombra: rgba(0, 0, 0, 0.08);
+    /* Efectos: sombra con el tono de --deep-twilight (3, 4, 94) */
+    --sombra: rgba(3, 4, 94, 0.08);
 }
 
 * {
@@ -77,7 +89,7 @@ ul {
 }
 
 .etiqueta {
-    color: var(--rojo);
+    color: var(--primario);
     font-weight: 400;
 
 }
@@ -90,7 +102,7 @@ ul {
 }
 
 .resaltado {
-    color: var(--rojo);
+    color: var(--primario);
 }
 
 .descripcion {
@@ -133,8 +145,8 @@ ul {
 
 .tarjeta-skill:hover {
     transform: translateY(-6px);
-    border-color: var(--rojo);
-    box-shadow: 0 12px 28px var(--rojo-sombra-suave);
+    border-color: var(--primario);
+    box-shadow: 0 12px 28px var(--primario-sombra-suave);
 }
 
 .tarjeta-cabecera {
@@ -158,7 +170,7 @@ ul {
 }
 
 .tarjeta-skill:hover .icono {
-    background-color: var(--rosa);
+    background-color: var(--acento);
     animation: pulso 0.8s ease infinite;
 }
 
@@ -188,8 +200,8 @@ ul {
 }
 
 .chips li:hover {
-    background-color: var(--rojo);
-    border-color: var(--rojo);
+    background-color: var(--primario);
+    border-color: var(--primario);
     color: var(--blanco);
     transform: translateY(-3px);
 }
@@ -204,8 +216,8 @@ ul {
 .pills li {
     padding: 8px 18px;
     font-size: 0.82rem;
-    background-color: var(--rosa);
-    border: 1px solid var(--borde-rosa);
+    background-color: var(--acento);
+    border: 1px solid var(--borde-acento);
     border-radius: 999px;
     cursor: default;
     animation: pop 0.5s ease both;
@@ -215,7 +227,7 @@ ul {
 
 
 .pills li:hover {
-    background-color: var(--rojo);
+    background-color: var(--primario);
     color: var(--blanco);
     transform: scale(1.06);
 }
@@ -240,7 +252,7 @@ ul {
 }
 
 .tarjeta-idioma:hover {
-    border-left-color: var(--rojo);
+    border-left-color: var(--primario);
     transform: translateX(6px);
     box-shadow: 0 8px 20px var(--sombra);
 }

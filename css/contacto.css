@@ -1,28 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Rojo y rosa */
-    --rojo: #9B2226;
-    --rojo-hover: #e0070e;
-    --rojo-fondo-suave: rgba(155, 34, 38, 0.04);
-    --rojo-foco: rgba(155, 34, 38, 0.12);
-    --rojo-sombra: rgba(155, 34, 38, 0.3);
-    --rojo-icono: #9b222663;
-    --rosa: #f8c9cc;
+    /* Paleta */
+    --deep-twilight: #03045eff;
+    --french-blue: #023e8aff;
+    --bright-teal-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --turquoise-surf: #00b4d8ff;
+    --sky-aqua: #48cae4ff;
+    --frosted-blue: #90e0efff;
+    --frosted-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+
+    /* Color principal */
+    --primario: var(--bright-teal-blue);
+    --primario-hover: var(--french-blue);
+    /* Transparencias (mismo tono que --bright-teal-blue: 0, 119, 182) */
+    --primario-fondo-suave: rgba(0, 119, 182, 0.04);
+    --primario-foco: rgba(0, 119, 182, 0.12);
+    --primario-sombra: rgba(0, 119, 182, 0.3);
+    --primario-icono: #0077b663;
 
     /* Neutros */
     --blanco: #ffffff;
     --fondo: #FCFCFC;
-    --borde: #dcdcdc;
+    --borde: var(--frosted-blue);
 
     /* Textos */
-    --texto: #1a1a1a;
-    --texto-suave: #444;
-    --texto-tenue: #777;
-    --placeholder: #8a8a8a;
+    --texto: var(--deep-twilight);
+    --texto-suave: var(--french-blue);
+    --texto-tenue: var(--bright-teal-blue);
+    --placeholder: var(--blue-green);
 
-    /* Efectos */
-    --sombra-form: rgba(0, 0, 0, 0.07);
+    /* Efectos: sombra con el tono de --deep-twilight (3, 4, 94) */
+    --sombra-form: rgba(3, 4, 94, 0.07);
 }
 
 * {
@@ -80,7 +91,7 @@ a {
 
 
 .etiqueta {
-    color: var(--rojo);
+    color: var(--primario);
     font-weight: 400;
 }
 
@@ -92,7 +103,7 @@ a {
 
 .punto {
     display: inline-block;
-    color: var(--rojo);
+    color: var(--primario);
     animation: latido 1.8s ease-in-out 1s infinite;
 }
 
@@ -133,9 +144,9 @@ a {
 
 a.item-contacto:hover {
     transform: translateX(8px);
-    background-color: var(--rojo-fondo-suave);
-     border-top: 1px solid var(--rojo);
-      border-bottom: 1px solid var(--rojo);
+    background-color: var(--primario-fondo-suave);
+     border-top: 1px solid var(--primario);
+      border-bottom: 1px solid var(--primario);
 }
 
 .icono {
@@ -148,7 +159,7 @@ a.item-contacto:hover {
 }
 
 a.item-contacto:hover .icono {
-    background-color: var(--rojo-icono);
+    background-color: var(--primario-icono);
     animation: pulso 0.8s ease infinite;
 }
 
@@ -172,7 +183,7 @@ a.item-contacto:hover .icono {
 }
 
 a.item-contacto:hover .dato-valor {
-    color: var(--rojo);
+    color: var(--primario);
 }
 
 
@@ -210,7 +221,7 @@ a.item-contacto:hover .dato-valor {
 }
 
 .campo:focus-within label {
-    color: var(--rojo);
+    color: var(--primario);
 }
 
 .campo input,
@@ -235,8 +246,8 @@ a.item-contacto:hover .dato-valor {
 .campo input:focus,
 .campo textarea:focus {
     background-color: var(--blanco);
-    border-color: var(--rojo);
-    box-shadow: 0 0 0 4px var(--rojo-foco);
+    border-color: var(--primario);
+    box-shadow: 0 0 0 4px var(--primario-foco);
 }
 
 
@@ -250,7 +261,7 @@ a.item-contacto:hover .dato-valor {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--blanco);
-    background-color: var(--rojo);
+    background-color: var(--primario);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -258,8 +269,8 @@ a.item-contacto:hover .dato-valor {
 }
 
 .btn-enviar:hover {
-    background-color: var(--rojo-hover);
-    box-shadow: 0 8px 18px var(--rojo-sombra);
+    background-color: var(--primario-hover);
+    box-shadow: 0 8px 18px var(--primario-sombra);
     transform: translateY(-2px);
 }
 
