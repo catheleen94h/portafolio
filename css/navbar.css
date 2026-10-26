@@ -1,13 +1,26 @@
 /* --- COLORES --- */
 :root {
-    --rojo: #9B2226;
+    /* Paleta */
+    --deep-twilight: #03045eff;
+    --french-blue: #023e8aff;
+    --bright-teal-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --turquoise-surf: #00b4d8ff;
+    --sky-aqua: #48cae4ff;
+    --frosted-blue: #90e0efff;
+    --frosted-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+
+    /* Uso en la página */
+    --primario: var(--bright-teal-blue);
     --fondo: #FCFCFC;
     --fondo-scrolled: rgba(252, 252, 252, 0.95);
-    --borde: #eaeaea;
-    --texto-oscuro: #111;
-    --texto-suave: #444;
-    --sombra-scrolled: rgba(0, 0, 0, 0.08);
-    --sombra-menu: rgba(0, 0, 0, 0.05);
+    --borde: var(--light-cyan);
+    --texto-oscuro: var(--deep-twilight);
+    --texto-suave: var(--french-blue);
+    /* Sombras con el tono de --deep-twilight (3, 4, 94) */
+    --sombra-scrolled: rgba(3, 4, 94, 0.08);
+    --sombra-menu: rgba(3, 4, 94, 0.05);
 }
 
 /* --- BARRA DE NAVEGACIÓN --- */
@@ -45,12 +58,12 @@
 }
 
 .logo-llaves {
-    color: var(--rojo);
+    color: var(--primario);
     font-weight: 700;
 }
 
 .logo-iniciales {
-    color: var(--rojo);
+    color: var(--primario);
     font-weight: 700;
 }
 
@@ -74,7 +87,7 @@
 }
 
 .navbar-links a:hover {
-    color: var(--rojo);
+    color: var(--primario);
 }
 
 /******* BOTÓN HAMBURGUESA **********/

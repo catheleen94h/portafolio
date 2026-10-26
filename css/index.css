@@ -2,15 +2,27 @@
 
 /* --- COLORES --- */
 :root {
-    --rojo: #9B2226;
-    --rojo-hover: #e0070e;
+    /* Paleta */
+    --deep-twilight: #03045eff;
+    --french-blue: #023e8aff;
+    --bright-teal-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --turquoise-surf: #00b4d8ff;
+    --sky-aqua: #48cae4ff;
+    --frosted-blue: #90e0efff;
+    --frosted-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+
+    /* Uso en la página */
+    --primario: var(--bright-teal-blue);
+    --primario-hover: var(--french-blue);
     --blanco: #ffffff;
     --fondo: #FCFCFC;
-    --fondo-boton: #f2eeed;
-    --borde: #dcdcdc;
-    --texto-oscuro: #111;
-    --texto-suave: #444;
-    --texto-boton: #333;
+    --fondo-boton: var(--light-cyan);
+    --borde: var(--frosted-blue);
+    --texto-oscuro: var(--deep-twilight);
+    --texto-suave: var(--french-blue);
+    --texto-boton: var(--deep-twilight);
 }
 
 * {
@@ -76,7 +88,7 @@ main {
 }
 
 #titulo-diana {
-    color: var(--rojo);
+    color: var(--primario);
 }
 
 #titulo-contenido {
@@ -108,12 +120,12 @@ main {
 
 #btn-explorar-proyectos {
     border: none;
-    background-color: var(--rojo);
+    background-color: var(--primario);
     color: var(--blanco);
 }
 
 #btn-explorar-proyectos:hover {
-    background-color: var(--rojo-hover);
+    background-color: var(--primario-hover);
 }
 
 #btn-hablemos {
@@ -145,9 +157,9 @@ main {
 
 }
 
-/* --- FRANJA ROJA --- */
+/* --- FRANJA DE HABILIDADES --- */
 .franja-habilidades {
-    background-color: var(--rojo);
+    background-color: var(--primario);
     color: var(--blanco);
     padding: 26px 0;
     font-size: clamp(0.95rem, 1.2vw, 1.15rem);

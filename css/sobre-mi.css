@@ -2,17 +2,32 @@
 
 /****************************COLORES **********************************/
 :root {
+    /* Paleta */
+    --deep-twilight: #03045eff;
+    --french-blue: #023e8aff;
+    --bright-teal-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --turquoise-surf: #00b4d8ff;
+    --sky-aqua: #48cae4ff;
+    --frosted-blue: #90e0efff;
+    --frosted-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+
+    /* Uso en la página */
     --color-fondo: #FCFCFC;
     --color-blanco: #ffffff;
-    --color-primario: #9B2226;
-    --color-primario-hover: #e0070e;
-    --color-primario-sombra: #9b22264b;
-    --color-primario-sombra-suave: rgba(155, 34, 38, 0.15);
-    --color-primario-fondo-suave: #9b222607;
-    --color-borde: #dcdcdc;
-    --color-boton-secundario: #f2eeed;
-    --color-texto: #333;
-    --color-sombra: rgba(0, 0, 0, 0.15);
+    --color-primario: var(--bright-teal-blue);
+    --color-primario-hover: var(--french-blue);
+    --color-borde: var(--frosted-blue);
+    --color-boton-secundario: var(--light-cyan);
+    --color-texto: var(--deep-twilight);
+
+    /* Transparencias (mismo tono que --bright-teal-blue: 0, 119, 182) */
+    --color-primario-sombra: #0077b64b;
+    --color-primario-sombra-suave: rgba(0, 119, 182, 0.15);
+    --color-primario-fondo-suave: #0077b607;
+    /* Sombra con el tono de --deep-twilight (3, 4, 94) */
+    --color-sombra: rgba(3, 4, 94, 0.15);
 }
 
 * {
@@ -67,7 +82,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .imagen-dianah img{
     display: block;
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 5%;
     box-shadow: 0 10px 30px var(--color-sombra);
@@ -83,7 +98,7 @@ column-gap: clamp(32px, 8vw, 128px);
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: clamp(16px, 2vw, 28px); 
+    gap: clamp(16px, 2vw, 28px);
 }
 
 #titulo-sobre-mi{
@@ -99,7 +114,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 #color{
     color: var(--color-primario);
-    
+
 }
 
 #contenido-sobre-mi{
@@ -110,7 +125,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .contenedor-botones-sobre-mi{
     display:flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -158,14 +173,14 @@ column-gap: clamp(32px, 8vw, 128px);
     display: flex;
     flex-direction: column;
     gap:50px;
-    padding: 3%;    
+    padding: 3%;
 }
 
 
 
 .tarjetas-logros{
-    display: flex;  
-    flex-wrap: wrap;  
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     column-gap: clamp(25px, 8vw, 50px);
 }
@@ -187,7 +202,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta img{
     display: block;
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 5%;
     box-shadow: 0 10px 30px var(--color-sombra);
@@ -205,7 +220,7 @@ column-gap: clamp(32px, 8vw, 128px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2%;    
+    padding: 2%;
     max-width: 100%;
 }
 
@@ -233,12 +248,12 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta-educacion{
     display:flex;
-    flex-direction: row; 
-    padding-top: 2%; 
+    flex-direction: row;
+    padding-top: 2%;
     padding-bottom: 1%;
     max-width: 100%;
     column-gap: clamp(32px, 8vw, 128px);
-    
+
     justify-content: left;
     border-top: 1px solid var(--color-borde);
 
@@ -260,11 +275,11 @@ column-gap: clamp(32px, 8vw, 128px);
 }
 
 .tarjetas-cursos{
-    display: flex;  
-    flex-wrap: wrap;  
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     column-gap: clamp(25px, 8vw, 50px);
-}   
+}
 
 .tarjeta-cursos:hover{
     transform: translateY(-6px);
@@ -274,7 +289,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta-cursos{
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     max-width: 30%;
     padding: 2%;
     background-color: var(--color-blanco);
@@ -295,12 +310,12 @@ column-gap: clamp(32px, 8vw, 128px);
     .contenedor-foto-texto {
         column-gap: 32px;
     }
- 
+
     .imagen-dianah {
         flex-basis: clamp(240px, 32vw, 340px);
     }
 }
- 
+
 /* ==========================================
    CELULAR (768px o menos)
    ========================================== */
@@ -311,22 +326,22 @@ column-gap: clamp(32px, 8vw, 128px);
         padding: 28px 20px 40px;
         row-gap: 28px;
     }
- 
+
     .imagen-dianah {
         flex: none;
         align-self: center;
         width: 100%;
     }
- 
+
     #contenido-sobre-mi {
         padding-left: 0;
         font-size: 1rem;
     }
- 
+
     .contenedor-botones-sobre-mi {
         justify-content: center;
     }
- 
+
     .contenedor-botones-sobre-mi button {
         font-size: 1rem;
     }
@@ -353,7 +368,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 
 
- 
+
 /* ==========================================
    CELULAR PEQUEÑO (480px o menos)
    ========================================== */

@@ -1,25 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Rojo principal */
-    --rojo: #9B2226;
-    --rojo-hover: #e0070e;
-    --rosa: #f8c9cc;
-    --rojo-sombra: rgba(155, 34, 38, 0.3);
-    --rojo-sombra-suave: rgba(155, 34, 38, 0.15);
+    /* Paleta */
+    --deep-twilight: #03045eff;
+    --french-blue: #023e8aff;
+    --bright-teal-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --turquoise-surf: #00b4d8ff;
+    --sky-aqua: #48cae4ff;
+    --frosted-blue: #90e0efff;
+    --frosted-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+
+    /* Color principal */
+    --primario: var(--bright-teal-blue);
+    --primario-hover: var(--french-blue);
+    /* Transparencias (mismo tono que --bright-teal-blue: 0, 119, 182) */
+    --primario-sombra: rgba(0, 119, 182, 0.3);
+    --primario-sombra-suave: rgba(0, 119, 182, 0.15);
 
     /* Neutros */
     --blanco: #ffffff;
     --fondo: #FCFCFC;
-    --fondo-boton: #f2eeed;
-    --fondo-chip: #f5f2f1;
-    --fondo-imagen: #ececec;
-    --borde: #dcdcdc;
+    --fondo-boton: var(--light-cyan);
+    --fondo-chip: var(--light-cyan);
+    --fondo-imagen: var(--frosted-blue-2);
+    --borde: var(--frosted-blue);
 
     /* Textos */
-    --texto: #1a1a1a;
-    --texto-suave: #444;
-    --texto-imagen: #555;
+    --texto: var(--deep-twilight);
+    --texto-suave: var(--french-blue);
+    --texto-imagen: var(--french-blue);
 
     /* Efectos */
     --brillo: rgba(255, 255, 255, 0.55);
@@ -83,7 +94,7 @@ a {
 
 
 .etiqueta {
-    color: var(--rojo);
+    color: var(--primario);
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -97,7 +108,7 @@ a {
 }
 
 .resaltado {
-    color: var(--rojo);
+    color: var(--primario);
 
 }
 
@@ -130,7 +141,7 @@ a {
 
 .filtro:hover {
     background-color: var(--blanco);
-    border-color: var(--rojo);
+    border-color: var(--primario);
     transform: translateY(-2px);
 }
 
@@ -139,20 +150,20 @@ a {
 }
 
 .filtro:focus-visible {
-    outline: 2px solid var(--rojo);
+    outline: 2px solid var(--primario);
     outline-offset: 2px;
 }
 
 .filtro.activo {
     color: var(--blanco);
-    background-color: var(--rojo);
-    border-color: var(--rojo);
-    box-shadow: 0 6px 14px var(--rojo-sombra);
+    background-color: var(--primario);
+    border-color: var(--primario);
+    box-shadow: 0 6px 14px var(--primario-sombra);
 }
 
 .filtro.activo:hover {
-    background-color: var(--rojo-hover);
-    border-color: var(--rojo-hover);
+    background-color: var(--primario-hover);
+    border-color: var(--primario-hover);
 }
 
 
@@ -178,8 +189,8 @@ a {
 
 .tarjeta-proyecto:hover {
     transform: translateY(-6px);
-    border-color: var(--rojo);
-    box-shadow: 0 14px 30px var(--rojo-sombra-suave);
+    border-color: var(--primario);
+    box-shadow: 0 14px 30px var(--primario-sombra-suave);
 }
 
 
@@ -240,7 +251,7 @@ a {
 .meta {
     font-size: 0.72rem;
     font-weight: 500;
-    color: var(--rojo);
+    color: var(--primario);
 }
 
 .titulo-proyecto {
@@ -273,8 +284,8 @@ a {
 }
 
 .chips li:hover {
-    background-color: var(--rojo);
-    border-color: var(--rojo);
+    background-color: var(--primario);
+    border-color: var(--primario);
     color: var(--blanco);
     transform: translateY(-3px);
 }
@@ -303,18 +314,18 @@ a {
 }
 
 .btn:focus-visible {
-    outline: 2px solid var(--rojo);
+    outline: 2px solid var(--primario);
     outline-offset: 2px;
 }
 
 .btn-primario {
     color: var(--blanco);
-    background-color: var(--rojo);
+    background-color: var(--primario);
 }
 
 .btn-primario:hover {
-    background-color: var(--rojo-hover);
-    box-shadow: 0 8px 18px var(--rojo-sombra);
+    background-color: var(--primario-hover);
+    box-shadow: 0 8px 18px var(--primario-sombra);
     transform: translateY(-2px);
 }
 
@@ -326,7 +337,7 @@ a {
 
 .btn-secundario:hover {
     background-color: var(--blanco);
-    border-color: var(--rojo);
+    border-color: var(--primario);
     transform: translateY(-2px);
 }
 
