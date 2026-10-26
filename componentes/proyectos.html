@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <base href="../">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Diana Hinestroza</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+</head>
+<body>
+
+   
+    <div id="contenedor-navbar"></div>
+
+    <main class="contenedor-proyectos">
+
+        
+        <header class="encabezado">
+            <p class="etiqueta">PROYECTOS</p>
+            <h1 class="titulo-pagina">Cosas que <span class="resaltado">he construido.</span></h1>
+            <p class="descripcion">
+                Desde aplicaciones web en equipo hasta productos electrónicos que hoy están en el mercado.
+            </p>
+        </header>
+
+        <!-- FILTROS -->
+        <div class="filtros" role="group" aria-label="Filtrar proyectos por categoría">
+            <button type="button" class="filtro activo" data-filtro="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filtro" data-filtro="software" aria-pressed="false">Software</button>
+            <button type="button" class="filtro" data-filtro="electronica" aria-pressed="false">Electrónica</button>
+        </div>
+
+        <!-- TARJETAS DE PROYECTOS -->
+        <section class="grid-proyectos" aria-live="polite">
+
+            <!-- Proyecto 1: TrendyShop -->
+            <article class="tarjeta-proyecto" data-categoria="software">
+                <div class="tarjeta-imagen">
+                   
+                    <img src="assets/img/trendy-shop.jpeg">
+                </div>
+                <div class="tarjeta-cuerpo">
+                    <p class="meta">Software · Hackathon, Generation Colombia · 10/2026</p>
+                    <h2 class="titulo-proyecto">TrendyShop – Tienda en línea</h2>
+                    <p class="texto-proyecto">
+                        Tienda en línea con catálogo de productos y carrito de compras persistido con
+                        localStorage, desarrollada en equipo bajo metodología Scrum.
+                    </p>
+                    <ul class="chips">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>localStorage</li>
+                        <li>Git / GitHub</li>
+                        <li>Scrum</li>
+                    </ul>
+                    <div class="acciones">
+                        <a href="https://kristianknt.github.io/TrendyShop.github.io/" class="btn btn-primario" target="_blank" rel="noopener noreferrer">Ver sitio <span class="flecha">↗</span></a>
+                        <a href="https://github.com/KristianKnt/hacker-rank-retos" class="btn btn-secundario" target="_blank" rel="noopener noreferrer">Ver código <span class="flecha">↗</span></a>
+                    </div>
+                </div>
+            </article>
+
+              <!-- Proyecto 3: Dispositivo sonoro -->
+            <article class="tarjeta-proyecto" data-categoria="electronica">
+                 <div class="tarjeta-imagen">
+                   <img src="assets/img/dispositivo-sonoro.jpeg">
+                </div>
+                <div class="tarjeta-cuerpo">
+                    <p class="meta">Electrónica · Réflex Señalización Vial</p>
+                    <h2 class="titulo-proyecto">Dispositivo sonoro para personas con discapacidad visual</h2>
+                    <p class="texto-proyecto">
+                        Creé un dispositivo sonoro que ayuda a las personas con discapacidad visual a
+                        cruzar con seguridad, comercializado hoy por la compañía.
+                    </p>
+                    <ul class="chips">
+                        <li>Diseño de circuito</li>
+                        <li>Programación</li>
+                        <li>Accesibilidad</li>
+                    </ul>
+                    <div class="acciones">
+                        <a href="https://reflex.co/productos/modulo-sonoro-para-invidentes" class="btn btn-secundario">Ver detalle <span class="flecha">↗</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto: SkillUp -->
+            <article class="tarjeta-proyecto" data-categoria="software">
+                <div class="tarjeta-imagen">
+                    <img src="assets/img/skillup.jpeg">
+                </div>
+                <div class="tarjeta-cuerpo">
+                    <p class="meta">Software · Proyecto en equipo · En desarrollo</p>
+                    <h2 class="titulo-proyecto">SkillUp - Plataforma de tutorías</h2>
+                    <p class="texto-proyecto">
+                        Plataforma web que conecta estudiantes con tutores: búsqueda por materia,
+                        perfiles de tutores y agendamiento de sesiones. Desarrollada en equipo con
+                        Git, ramas y Pull Requests.
+                    </p>
+                    <ul class="chips">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Git / GitHub</li>
+                        <li>Scrum</li>
+                    </ul>
+                    <div class="acciones">
+                        <a href="https://github.com/alangyraldo/SkillUp" class="btn btn-primario" target="_blank" rel="noopener noreferrer">Ver código <span class="flecha">↗</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto: Planificador de tareas -->
+            <article class="tarjeta-proyecto" data-categoria="software">
+                <div class="tarjeta-imagen">
+                    <img src="assets/img/planificador-tareas.jpeg">
+                </div>
+                <div class="tarjeta-cuerpo">
+                    <p class="meta">Software · Proyecto personal · En desarrollo</p>
+                    <h2 class="titulo-proyecto">Planificador de tareas</h2>
+                    <p class="texto-proyecto">
+                        Aplicación web para organizar tareas. <!-- Cuéntame qué permite hacer: crear, editar, filtrar, guardar... -->
+                    </p>
+                    <ul class="chips">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                    <div class="acciones">
+                        <a href="https://github.com/catheleen94h/planificador-tareas" class="btn btn-primario" target="_blank" rel="noopener noreferrer">Ver código <span class="flecha">↗</span></a>
+                    </div>
+                </div>
+            </article>
+          
+            <!-- Proyecto 2: Tótem semafórico -->
+            <article class="tarjeta-proyecto" data-categoria="electronica">
+                <div class="tarjeta-imagen">
+                    <img src="assets/img/totem-semaforico.jpeg">
+                </div>
+                <div class="tarjeta-cuerpo">
+                    <p class="meta">Electrónica · Réflex Señalización Vial</p>
+                    <h2 class="titulo-proyecto">Tótem semafórico inclusivo</h2>
+                    <p class="texto-proyecto">
+                        Diseñé y desarrollé un tótem semafórico para personas con discapacidad visual y
+                        auditiva, un producto que hoy vende la compañía.
+                    </p>
+                    <ul class="chips">
+                        <li>Diseño de circuito</li>
+                        <li>Programación</li>
+                        <li>Accesibilidad</li>
+                    </ul>
+                    <div class="acciones">
+                       <!-- <a href="#" class="btn btn-secundario">Ver detalle <span class="flecha">↗</span></a>-->
+                    </div>
+                </div>
+            </article>
+
+         
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Diana Hinestroza</p>
+        <p>Cali, Colombia</p>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/proyectos.js"></script>
+</body>
+</html>

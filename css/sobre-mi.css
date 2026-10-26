@@ -210,7 +210,7 @@ column-gap: clamp(32px, 8vw, 128px);
 
 .tarjeta-educacion:hover{
     scale:1.02;
-    background-color: #9b222621;
+    background-color: #9b222607;
     border-top: 1px solid #9B2226;
     border-bottom: 1px solid #9B2226;
 
