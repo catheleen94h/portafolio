@@ -82,6 +82,12 @@ a {
     gap: clamp(32px, 5vw, 56px);
 }
 
+.contenedor-contacto,
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
 .encabezado {
     display: flex;
     flex-direction: column;
